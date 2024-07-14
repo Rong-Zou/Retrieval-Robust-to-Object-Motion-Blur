@@ -75,13 +75,6 @@ Download our pre-trained model from [this link](results/train_results/link.txt).
 
 For testing, put the model in the directory same as the link file. 
 
-You can use the following command:
-
-```sh
-# Download the dataset
-wget -P ./results/train_results https://drive.google.com/file/d/1esPk_lFtUVwJ_SCxRIGH9PsFtaI3t7SO/view?usp=sharing
-```
-
 ## Testing
 
 First modify the parameter values in the [`set_data_dirs.py`](code/set_data_dirs.py) script to configure the correct directories.
@@ -99,7 +92,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Citation
 
 ```
-@inproceedings{defmo,
+@inproceedings{blur_retrieval,
   author = {Rong Zou and Marc Pollefeys and Denys Rozumnyi},
   title = {Retrieval Robust to Object Motion Blur},
   booktitle = {ECCV},

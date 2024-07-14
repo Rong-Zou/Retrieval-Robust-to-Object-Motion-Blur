@@ -383,6 +383,7 @@ def test_synthetic(args,
                 result_dir,
                 per_BL_db=per_blur_level_db,
             )
+            print("Get query, database, and perBL_database descriptors: done!")
         else:
             (
                 queries_descriptors,
@@ -401,14 +402,12 @@ def test_synthetic(args,
                 result_dir,
                 per_BL_db=per_blur_level_db,
             )
-
+            print("Get query and database descriptors: done!")
         assure_dir(
             os.path.join(
                 result_dir, q_db_mode, "db_blur_level_all"
             )
         )
-
-        print("Get query, database, and perBL_database descriptors done!")
 
         compute_mAP(
             database_descriptors,
@@ -449,7 +448,7 @@ def test_synthetic(args,
                     "with_distractors",
                 )
             )
-            print("Get distractor descriptors done!")
+            print("Get distractor descriptors: done!")
             print(
                 "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
             )
@@ -659,7 +658,7 @@ def test_real(args, device):
         device=device,
         save_load_path=result_dir,
     )
-    print("Get query, database descriptors done!")
+    print("Get query, database descriptors: done!")
     
     print("Computing mAP...")
     compute_mAP(
@@ -673,6 +672,6 @@ def test_real(args, device):
         results_path=result_dir,
         database_image_paths=db_img_paths,
     )
-    print("mAP computation done!")
+    print("mAP computation: done!")
     
        
