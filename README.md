@@ -25,16 +25,20 @@ pip install -r requirements.txt
 ```
 
 ## Data Preparation
-Download dataset zips from <a style="color: red;">TODO</a>, and extract the data. 
+Download dataset zips from [this link](https://cvg-data.inf.ethz.ch/romb), and extract the data. 
 
 You may use the following commands:
 
 ```sh
 # Download the dataset
-wget [TODO: data link]
+wget https://cvg-data.inf.ethz.ch/romb/real_data.zip
+wget https://cvg-data.inf.ethz.ch/romb/synthetic_data.zip
+wget https://cvg-data.inf.ethz.ch/romb/synthetic_data_distractors.zip
 
 # Unzip the dataset to ./data/, change the target path to your desired directory
-unzip xxx.zip -d data/
+unzip real_data.zip -d data/
+unzip synthetic_data.zip -d data/
+unzip synthetic_data_distractors.zip -d data/
 ```
 
 After extraction, the data strcture should look like this:
