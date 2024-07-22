@@ -2,7 +2,6 @@
 *.jpg
 *.png
 *.pt
-data/
 *.pkl
 *.npy
 results/

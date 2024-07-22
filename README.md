@@ -41,37 +41,7 @@ unzip synthetic_data.zip -d data/
 unzip synthetic_data_distractors.zip -d data/
 ```
 
-After extraction, the data strcture should look like this:
-
-```
-parent_folder
-└── real_data
-    └── blur_level_1
-        ├── ins1_traj1_img1.png
-        ├── ins1_traj1_img2.png
-        ├── ...
-        └── insN_trajM_imgX.png
-    ├── ...
-    ├── blur_level_6
-    └── stats
-
-parent_folder
-└── synthetic_data (or synthetic_data_distractors)
-    └── category_1
-        └── instance_1
-            └── trajectory_1
-                └── image_1.png
-                ├── ...
-                └── image_11.png
-            ├── ...
-            └── trajectory_T
-        ├── ...
-        └── instance_I
-    ├── ...
-    ├── category_C
-    └── stats
-```
-The stats folder in each dataset contains pre-computed statistics that facilitate quick access to essential information of that dataset.
+See the [dataset page](data/data.md) for more details.
 
 ## Pretrained Model
 
@@ -99,7 +69,7 @@ This project is licensed under the [MIT License](LICENSE).
 @inproceedings{blur_retrieval,
   author = {Rong Zou and Marc Pollefeys and Denys Rozumnyi},
   title = {Retrieval Robust to Object Motion Blur},
-  booktitle = {ECCV},
+  booktitle = {European Conference on Computer Vision (ECCV)},
   year = {2024}
 }
 ```
